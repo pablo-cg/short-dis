@@ -1,5 +1,7 @@
-<script setup lang='ts'>
-
+<script setup lang="ts">
+useHead({
+  title: 'Dashboard',
+});
 </script>
 
 <template>
@@ -8,6 +10,4 @@
   </main>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -4,6 +4,9 @@ useHead({
     class:
       'font-sans antialiased bg-white dark:bg-neutral-900 text-black dark:text-white text selection:bg-neutral-200 dark:selection:bg-neutral-700',
   },
+  titleTemplate: (title) => {
+    return title ? `${title} - ShortDis` : 'ShortDis';
+  },
 });
 </script>
 
