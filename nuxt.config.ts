@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   ],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      link: [{ rel: 'icon', href: '/short-dis.webp' }],
+    },
   },
   shadcn: {
     /**
