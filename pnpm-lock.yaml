@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@nuxtjs/color-mode':
+        specifier: ^3.4.1
+        version: 3.4.1(rollup@4.17.2)
       '@radix-icons/vue':
         specifier: ^1.0.0
         version: 1.0.0(vue@3.4.26(typescript@5.4.5))
@@ -592,6 +595,9 @@ packages:
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
       vue: ^3.3.4
+
+  '@nuxtjs/color-mode@3.4.1':
+    resolution: {integrity: sha512-vZgJqDstxInGw3RGSWbLoCLXtU1mvh1LLeuEA/X3a++DYA4ifwSbNoiSiOyb9qZHFEwz1Xr99H71sXV4IhOaEg==}
 
   '@nuxtjs/tailwindcss@6.12.0':
     resolution: {integrity: sha512-vXvEq8z177TQcx0tc10mw3O6T9WeN0iTL8hIKGDfidmr+HKReexJU01aPgHefFrCu4LJB70egYFYnywzB9lMyQ==}
@@ -4811,6 +4817,16 @@ snapshots:
       - vls
       - vti
       - vue-tsc
+
+  '@nuxtjs/color-mode@3.4.1(rollup@4.17.2)':
+    dependencies:
+      '@nuxt/kit': 3.11.2(rollup@4.17.2)
+      pathe: 1.1.2
+      pkg-types: 1.1.0
+      semver: 7.6.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
 
   '@nuxtjs/tailwindcss@6.12.0(rollup@4.17.2)':
     dependencies:

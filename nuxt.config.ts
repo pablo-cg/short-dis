@@ -1,7 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', '@vueuse/nuxt', 'nuxt-icon'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@vueuse/nuxt',
+    'nuxt-icon',
+    '@nuxtjs/color-mode',
+  ],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -15,5 +21,8 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui',
+  },
+  colorMode: {
+    classSuffix: '',
   },
 });
