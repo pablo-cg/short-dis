@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import { Button } from '~/components/ui/button';
+useHead({
+  titleTemplate() {
+    return 'ShortDis - A blatant copy of an open-source URL Shortner';
+  },
+});
 </script>
 
 <template>
   <main class="relative h-[calc(100vh-4rem)]">
     <div
       id="background"
-      class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] dark:bg-neutral-900"
+      class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] dark:bg-neutral-900"
     />
+
     <div
       id="hero"
       class="px-6 pt-16 md:pt-24 lg:pt-32"
@@ -25,9 +31,7 @@ import { Button } from '~/components/ui/button';
           short links. It is easy to use, fast and secure.
         </p>
       </section>
-      <section
-        class="flex gap-2 justify-center mt-8 duration-700 animate-in fade-in-30"
-      >
+      <section class="flex gap-2 justify-center mt-8">
         <Button
           as-child
           variant="secondary"
